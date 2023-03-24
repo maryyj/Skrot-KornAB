@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta oss</title>
+</head>
+
+<body>
+  <div style="background-color:lightgrey; margin: 30px; padding: 30px;">
+    <div style="text-align: center;">
+
+      <h1 style="text-align:center">Skrot och Korn AB</h1><br><br>
+      <a href="index.html">Startsida</a> &emsp;
+      <a href="products.html">Fordon</a> &emsp;
+      <a href="media.html">Videon</a> &emsp;
+      <a href="aboutus.html">Om oss</a> &emsp;
+      <br><br>
+    </div>
+  <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=maria@abc.se" method="post">
+    <p><b>Kontakta oss: </b></p>
+    <label for="name">Namn</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="address">Adress</label><br>
+    <input type="text" id="address" name="address"><br>
+    <label for="email">Emailadress</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="phone">Telefonnummer</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <input type="radio" name="privorcomp" id="private" value="private">
+    <label for="private">Privatperson</label><br>
+    <input type="radio" name="privorcomp" id="company" value="company">
+    <label for="company">Företag</label><br>
+
+    <p><b>Välj storlek på företaget:</b></p>
+    <input type="radio" name="quantity" id="hundred" value="hundred">
+    <label for="quantity">1-100 anställda</label><br>
+    <input type="radio" name="quantity" id="thousand" value="thousand">
+    <label for="quantity">101-1000 anställda</label><br>
+    <input type="radio" name="quantity" id="thousandmore" value="thousandmore">
+    <label for="quantity">Mer än 1000 anställda</label><br>
+    <input type="radio" name="quantity" id="private" value="private">
+    <label for="private">Jag är en privatperson</label><br><br>
+
+    <label for="question"><b>Skriv din fråga här: </b></label><br>
+    <textarea id="question" name="question" rows="5" cols="80"></textarea><br>
+
+    <input type="checkbox" id="newsletter" name="newsletter" value="ja">
+    <label for="newsletter">Vill du ha nyhetsbrev</label>
+    <input type="hidden" name="newsletter" value="nej"><br>
+    <input type="checkbox" id="contactphone" name="contactphone" value="ja">
+    <label for="contactphone">Vill du bli kontaktad på telefon</label><br>
+    <input type="hidden" name="contactphone" value="nej"><br>
+
+    <input type="submit" value="Skicka">
+  </form>
+</body>
+<div style="text-align: center;">
+<iframe src="contactinfo.html" width="700" height="150" style="border: none"></iframe>
+</div>  </div>
+
+</html>
